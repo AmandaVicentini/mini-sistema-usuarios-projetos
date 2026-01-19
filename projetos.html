@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Projetos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Cadastro de Projetos</h1>
+
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="usuarios.html">Cadastro de Usuários</a>
+  </nav>
+
+  <form id="formProjeto">
+    <label>
+      Nome do Projeto:
+      <input type="text" id="nomeProjeto" required>
+    </label>
+
+    <label>
+      Data de Início:
+      <input type="date" id="dataInicio" required>
+    </label>
+
+    <label>
+      Data de Fim:
+      <input type="date" id="dataFim" required>
+    </label>
+
+    <label>
+      Usuário Responsável:
+      <select id="usuarioProjeto" required>
+        <option value="">Selecione um usuário</option>
+      </select>
+    </label>
+
+    <button type="submit">Cadastrar Projeto</button>
+  </form>
+
+  <script type="module" src="js/projetos.js"></script>
+
+</body>
+</html>
