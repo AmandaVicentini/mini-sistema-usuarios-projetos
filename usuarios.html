@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuários</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Cadastro de Usuários</h1>
+
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="projetos.html">Cadastro de Projetos</a>
+  </nav>
+
+  <form id="formUsuario">
+    <label>
+      Nome:
+      <input type="text" id="nome" required>
+    </label>
+
+    <label>
+      Telefone:
+      <input type="text" id="telefone" required>
+    </label>
+
+    <label>
+      Data de nascimento:
+      <input type="date" id="nascimento" required>
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" id="concorda">
+      Concordo em cadastrar
+    </label>
+
+    <button type="submit">Cadastrar Usuário</button>
+  </form>
+
+  <h2>Usuários cadastrados</h2>
+  <p>Total: <strong id="contadorUsuarios">0</strong></p>
+  <ul id="listaUsuarios"></ul>
+
+  <script type="module" src="js/usuarios.js"></script>
+
+</body>
+</html>
